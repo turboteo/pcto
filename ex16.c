@@ -2,22 +2,23 @@
 
 int main(){
     float n;
-    float d;
+    float den;
+    float temp;
     float somma;
-    float temp = 0;
 
+    den = 1;
+    temp = 0;
+    n = 0;
     printf("Inserisci un numero: ");
     scanf("%f", &n);
-    d = 1;
-    while(n > 0){
-        somma = temp + n;
-        printf("La media è: %f \n", (somma /d));
-        d = d + 1;
-        printf("Inserire un altro numero: \n");
-        scanf("%f", &temp);
+    while (n > 0){
+        somma = n + temp;
+        printf("La media è %f \n",somma / den);
+        temp = somma;
+        den = den + 1;
+        printf("Inserisci un numero: ");
+        scanf("%f", &n);  
     }
-
-    printf("Il numero è negativo, non andrò avanti \n");
-    
-
+    printf("Questo numero è negativo, mi dispiace non posso fare la media \n");
+    return 0;
 }
