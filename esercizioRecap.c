@@ -24,7 +24,7 @@ void delta(float a,float b,float c){
         if (delta> 0){
             printf("Le soluzioni sono %f e %f \n", risultato1, risultato2);
         }
-        else{
+        else if (delta = 0){
             ("Le soluzioni sono %f e %f \n", risultato1);
         }
     }
